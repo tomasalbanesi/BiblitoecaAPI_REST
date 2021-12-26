@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BiblitoecaAPI_REST.Utilities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BiblitoecaAPI_REST
 {
@@ -32,6 +34,8 @@ namespace BiblitoecaAPI_REST
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BiblitoecaAPI_REST", Version = "v1" });
             });
+            services.AddDbContext<ApplicationDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
