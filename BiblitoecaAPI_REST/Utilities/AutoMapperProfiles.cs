@@ -10,6 +10,7 @@ namespace BiblitoecaAPI_REST.Utilities
         {
             // Categories
             CreateMap<Category,CategoryReadDTO>().ReverseMap();
+            CreateMap<CategoryCreationDTO, Category>();
         }
     }
 }

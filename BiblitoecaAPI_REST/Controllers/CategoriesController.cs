@@ -38,7 +38,7 @@ namespace BiblitoecaAPI_REST.Controllers
             //}).ToList();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetCategory")]
         public async Task<ActionResult<CategoryReadDTO>> GetById(int id)
         {
             var category = await applicationDbContext.Categories.FirstOrDefaultAsync(c => c.IdCategory == id);
@@ -50,6 +50,22 @@ namespace BiblitoecaAPI_REST.Controllers
 
             return mapper.Map<CategoryReadDTO>(category);
             
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post(CategoryCreationDTO categoryCreationDTO)
+        {
+            var category = mapper.Map<Category>(categoryCreationDTO);
+
+            applicationDbContext.Categories.Add(category);
+
+            await applicationDbContext.SaveChangesAsync();
+
+            // Rest define que debemos devolver el recurso creado con la ruta al cliente
+
+            var dto = mapper.Map<CategoryReadDTO>(category);
+
+            return new CreatedAtRouteResult("GetCategory", new { id = category.IdCategory }, dto);
         }
 
     }

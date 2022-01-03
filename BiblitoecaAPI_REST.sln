@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiblitoecaAPI_REST", "BiblitoecaAPI_REST\BiblitoecaAPI_REST.csproj", "{86E0B902-DFFF-4CA9-A056-300DA37337E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiblitoecaAPI_REST", "BiblitoecaAPI_REST\BiblitoecaAPI_REST.csproj", "{86E0B902-DFFF-4CA9-A056-300DA37337E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient_ConsoleTest", "HttpClient_ConsoleTest\HttpClient_ConsoleTest.csproj", "{D6C5B31E-7528-4219-9130-842A54423978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient_WinFromsTest", "HttpClient_WinFromsTest\HttpClient_WinFromsTest.csproj", "{25E9A71F-F23A-427D-81D1-F59879DE3669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{86E0B902-DFFF-4CA9-A056-300DA37337E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86E0B902-DFFF-4CA9-A056-300DA37337E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86E0B902-DFFF-4CA9-A056-300DA37337E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C5B31E-7528-4219-9130-842A54423978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C5B31E-7528-4219-9130-842A54423978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C5B31E-7528-4219-9130-842A54423978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C5B31E-7528-4219-9130-842A54423978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E9A71F-F23A-427D-81D1-F59879DE3669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E9A71F-F23A-427D-81D1-F59879DE3669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E9A71F-F23A-427D-81D1-F59879DE3669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E9A71F-F23A-427D-81D1-F59879DE3669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
